@@ -54,3 +54,27 @@ make
 sudo make install
 ```
   
+  
+```sh
+git clone https://github.com/dpayne/cli-visualizer#cli-visualizer
+cdcli-visualizer#cli-visualizer
+mkdir build/
+cd build/
+cmake ../ && make clean && make -j$(nproc) && sudo make install
+cd ..
+
+if [ -z "$XDG_CONFIG_HOME" ]
+then
+    CONFIG_DIR=$HOME/.config/vis
+else
+    CONFIG_DIR=$XDG_CONFIG_HOME/vis
+fi
+
+#create config directory
+mkdir -p "$CONFIG_DIR/colors"
+
+#copy over example files
+cp examples/config $CONFIG_DIR/
+cp examples/rainbow $CONFIG_DIR/colors/rainbow
+cp examples/basic_colors $CONFIG_DIR/colors/basic_colors
+```
