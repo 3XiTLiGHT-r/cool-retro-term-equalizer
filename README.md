@@ -1,4 +1,4 @@
-# cool-retro-term-equalizer
+# cool-retro-term-equalizermodule "QMLTermWidget" is not installed
 equalizer using cool-retro-term, cava &amp; ncmpcpp
 
 
@@ -8,10 +8,7 @@ equalizer using cool-retro-term, cava &amp; ncmpcpp
 
 Fix for 'module "QMLTermWidget" is not installed':
 
-'# cp cool-retro-term-fix.sh /bin/cool-retro-term'
-
 ```
-!/bin/bash /bin/
-
-exec /home/$user/cool-retro-term/cool-retro-term
+# cp cool-retro-term-fix.sh /bin/cool-retro-term'
 ```
+
