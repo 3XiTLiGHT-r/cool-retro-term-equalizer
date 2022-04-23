@@ -14,7 +14,7 @@ Fix for 'module "QMLTermWidget" is not installed':
  
 ```sh
 if [ "$1" ]; then addvline=$1$'\n'; fi
-sudo cat <<EOT > /bin/cool-retro-termi
+sudo cat <<EOT > /bin/cool-retro-term
 #!/bin/bash
 ${addvline}
 exec /home/exitlight/cool-retro-term/cool-retro-term"
