@@ -17,7 +17,7 @@ if [ "$1" ]; then addvline=$1$'\n'; fi
 sudo cat <<EOT > /bin/cool-retro-term
 #!/bin/bash
 ${addvline}
-exec /home/exitlight/cool-retro-term/cool-retro-term"
+exec /home/$USER/cool-retro-term/cool-retro-term"
 EOT
 ```
  
