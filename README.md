@@ -11,15 +11,15 @@ equalizer using cool-retro-term, cava &amp; ncmpcpp
    
 Fix for 'module "QMLTermWidget" is not installed':
  
+ 
 ```sh
-#!/bin/bash
-exec /home/exitlight/cool-retro-term/cool-retro-term
+echo 
+"#!/bin/bash
+exec /home/exitlight/cool-retro-term/cool-retro-term" 
+> /bin/cool-retro-term
 ```
-  
-   
-`# cp cool-retro-term-fix.sh /bin/cool-retro-term`
-  
-  
+ 
+ 
 ```sh
 pacman -S --needed --noconfirm \
 base-devel fftw ncurses alsa-lib iniparser pulseaudio \
